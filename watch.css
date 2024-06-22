@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.outerbox{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top ,#182452,#a8f5ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.menu{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.menu i{
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    position: relative;
+    top: 11px;
+}
+.watchMenu{
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: 2px 4px 4px  #0a8be1;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.watchMenu:active{
+    transform: scale(90%);
+}
+#watchbutton{
+    background-color: rgb(6, 6, 220);
+}
+
+.content{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    background:linear-gradient(to top left,#ffffff,#ffffff63);
+    backdrop-filter: blur(10px);
+    box-shadow: 6px 6px 15px #2773a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 20px;
+    
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-image: url(https://png.pngtree.com/png-clipart/20230508/original/pngtree-sunrise-flat-icon-png-image_9148396.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.time{
+    display: flex;
+}
+#currtimepara{
+    font-weight: bolder;
+    font-size: 3rem;
+    text-shadow: 3px 3px blue;
+}
+.am{
+    margin: 25px 0 0 15px;
+}
+.am h3{
+    color: #555;
+}
+#datepara{
+    color: #555;
+}
+
+
+/* stowatch */
+
+.stopwatch{
+    height: 30px;
+    width: 90px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px; 
+    background-color: rgb(6, 6, 220);
+    color: white;
+    font-weight: 600;
+    box-shadow: inset -2px -2px 6px black;
+}
+
+.stopwatch:active{
+    box-shadow: none;
+}
+
+.stcontent{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    display: none;
+    background:linear-gradient(to top left,#ffffff,#ffffff63);
+    backdrop-filter: blur(10px);
+    box-shadow: 6px 6px 15px #2773a5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+.timer{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px blue;
+}
+.controlbuttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width :260px;
+}
+
+.controlbutton{
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #2773a5;
+    background-color: #409ad6;
+    border: none;
+    color: white;
+    font-weight: 600;
+   
+}
+
+.controlbutton:active{
+    box-shadow: none;
+}
+
+
+
+
+    /* timer section  */
+
+.timercontent{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    background:linear-gradient(to top left,#ffffff,#ffffff63);
+    backdrop-filter: blur(10px);
+    box-shadow: 6px 6px 15px #2773a5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.settimer{
+    display: flex;
+    width: 220px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.set{
+    height: 100%;
+}
+
+.set select{
+    outline: none;
+    height: 30px;
+    width: 50px;
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    border-radius: 0.3rem;
+}
+
+.timerbuttons{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancletimer{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 3px grey;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.cancletimer:active{
+    transform: scale(90%);
+}
+
+.pausetimer{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.pausetimer:active{
+    transform: scale(90%);
+}
+#timeleftpara{
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-top: 5px;
+}

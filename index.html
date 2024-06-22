@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Watch</title>
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+    <div class="outerbox">
+        <div class="menu">
+            <div id="watchbutton" class="watchMenu"><i id="clockicon" class="fa-regular fa-clock"></i></div>
+            <div id="stopwatchbutton" class="watchMenu"><i id="stopwatchicon" class="fa-solid fa-stopwatch"></i></div>
+            <div id="timerbutton" class="watchMenu"><i id="timericon" class="fa-regular fa-hourglass"></i></div>
+        </div>
+
+
+        <div id="content" class="content">
+            <div class="logo"></div>
+            <div class="time">
+                <div class="currtime">
+                    <h1 id="currtimepara"></h1>
+                </div>
+                <div class="am">
+                    <h3 id="ampara"></h3>
+                </div>
+            </div>
+            <div class="date">
+                <p id="datepara">Monday</p>
+            </div>
+        </div>
+
+
+
+        <div id="stcontent" class="stcontent">
+            <div class="timer">
+                <h1 id="timerpara">00 : 00 : 00</h1>
+            </div>
+            <div class="controlbuttons">
+                <button id="pause" class="controlbutton">Pause</button>
+                <button id="start" class="controlbutton">Start</button>
+                <button id="restart" class="controlbutton">Restart</button>
+            </div>
+        </div>
+
+
+        <div id="timercontent" class="timercontent">
+            <div class="settimer">
+                <div class="sethour set">
+                    <p>Hour</p>
+                    <select name="hourselect" id="hourselect"></select>
+                </div>
+                <div class="setmin set">
+                    <p>Minutes</p>
+                    <select name="minutsselect" id="minutsselect"></select>
+                </div>
+                <div class="setsec set">
+                    <p>Second</p>
+                    <select name="secondselect" id="secondselect"></select>
+                </div>
+            </div>
+            <div class="timerbuttons">
+                <div class="cancletimer">X</div>
+                <div class="pausetimer"><i class="fa-solid fa-pause"></i></div>
+            </div>
+            <div><p id="timeleftpara">00:00:00</p></div>
+        </div>
+    </div>
+
+    <script src="watch.js"></script>
+</body>
+</html>
